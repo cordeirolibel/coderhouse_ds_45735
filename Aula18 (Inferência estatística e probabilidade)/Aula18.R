@@ -15,12 +15,13 @@
 # ------------------------------------------------------------------------------------------------
 # População
 
-idade <- c(25,30,40,18,17,22,45,19,21,36,33,30,29,55,41,26,20,19,56,39,24,22,35,
-           45,16,32,45,22,56,37,45,46,31,35,38,39,42,35,25,22,29,40,45,44,43)
+#idade <- c(25,30,40,18,17,22,45,19,21,36,33,30,29,55,41,26,20,19,56,39,24,22,35,
+#           45,16,32,45,22,56,37,45,46,31,35,38,39,42,35,25,22,29,40,45,44,43)
+idade <- c(37,35,27,25,25,34,39,30,34,56,37,42,36,36,35,24,35,34,28,29,24,23,24,27,35)
 length(idade)
 
 # Media
-mean(idade)
+mean(idade) # 32.44
 # coeficiente de variação
 sd(idade)/mean(idade)*100
 
@@ -41,7 +42,7 @@ idade_amostra
 # Estimadores
 
 # Media
-mean(idade_amostra)
+mean(idade_amostra) #31.6
 # coeficiente de variação
 sd(idade_amostra)/mean(idade_amostra)*100
 
@@ -82,8 +83,10 @@ curve(dnorm(x, mean = mean(estimativa_media), sd = sd(estimativa_media)),
 n <- length(estimativa_media);
 n
 # Média das estimativas 
-theta_bar <- mean(estimativa_media)
+theta_bar <- mean(estimativa_media) #32.39612
 theta_bar
+
+
 # Desvio padrão das estimativas
 s <- sd(estimativa_media); 
 s
